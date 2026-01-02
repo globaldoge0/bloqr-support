@@ -4,7 +4,7 @@
 
 If you have any questions, issues, or feedback about BLOQR, please reach out to us:
 
-📧 **Email:** your-email@example.com
+📧 **Email:** globaldoge0@gmail.com
 
 ---
 
