@@ -1,100 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOQR - Block Puzzle Game</title>
+    <title>BLOQR Support</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #0a0a15 0%, #1a1a2e 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             color: white;
+            padding: 40px 20px;
         }
-        .container { text-align: center; padding: 40px; max-width: 600px; }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
         h1 {
-            font-size: 4rem;
+            font-size: 2.5rem;
             background: linear-gradient(90deg, #FF0055, #00EEFF, #CCFF00);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 20px;
-            letter-spacing: 8px;
+            margin-bottom: 10px;
         }
-        .tagline {
-            font-size: 1.3rem;
+
+        .subtitle {
             color: #888;
-            margin-bottom: 40px;
+            font-size: 1.1rem;
         }
-        .badge {
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .card h2 {
+            color: #00EEFF;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card p {
+            color: #aaa;
+            line-height: 1.7;
+        }
+
+        .card a {
+            color: #00EEFF;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-btn {
             display: inline-block;
-            padding: 16px 32px;
-            background: white;
-            color: black;
-            border-radius: 14px;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #FF0055, #AA00FF);
+            color: white;
+            border-radius: 12px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
         }
-        .badge:hover {
-            background: #00EEFF;
+
+        .contact-btn:hover {
             transform: scale(1.05);
         }
-        .features {
-            margin-top: 60px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
+
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
         }
-        .feature {
-            background: rgba(255,255,255,0.05);
-            padding: 20px;
-            border-radius: 16px;
-            width: 150px;
+
+        .faq-item:last-child {
+            border-bottom: none;
         }
-        .feature-icon { font-size: 2rem; margin-bottom: 10px; }
-        .feature-text { font-size: 0.9rem; color: #aaa; }
+
+        .faq-q {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .faq-a {
+            color: #888;
+            line-height: 1.6;
+        }
+
         footer {
-            position: fixed;
-            bottom: 20px;
-            width: 100%;
             text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #555;
-            font-size: 0.8rem;
         }
-        footer a { color: #00EEFF; text-decoration: none; }
+
+        footer a {
+            color: #00EEFF;
+            text-decoration: none;
+            margin: 0 15px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>BLOQR</h1>
-        <p class="tagline">The ultimate neon block puzzle game for iOS</p>
-        <a href="https://apps.apple.com/app/bloqr/id6740594073" class="badge">
-            Download on App Store
-        </a>
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">🎮</div>
-                <div class="feature-text">Addictive Gameplay</div>
+        <header>
+            <h1>BLOQR Support</h1>
+            <p class="subtitle">We're here to help!</p>
+        </header>
+
+        <div class="card">
+            <h2>📧 Contact Us</h2>
+            <p>Have questions, feedback, or need assistance? We'd love to hear from you!</p>
+            <a href="mailto:globaldoge0@gmail.com" class="contact-btn">Email Support</a>
+        </div>
+
+        <div class="card">
+            <h2>❓ Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p class="faq-q">How do I play BLOQR?</p>
+                <p class="faq-a">Drag and drop blocks onto the grid to complete rows and columns. When a row or column
+                    is filled, it clears and you earn points!</p>
             </div>
-            <div class="feature">
-                <div class="feature-icon">🏆</div>
-                <div class="feature-text">Global Leaderboard</div>
+
+            <div class="faq-item">
+                <p class="faq-q">How does the leaderboard work?</p>
+                <p class="faq-a">Sign in with Apple or play as a guest to submit your scores. Compete globally or check
+                    the weekly rankings!</p>
             </div>
-            <div class="feature">
-                <div class="feature-icon">✨</div>
-                <div class="feature-text">Neon Aesthetics</div>
+
+            <div class="faq-item">
+                <p class="faq-q">Is BLOQR free to play?</p>
+                <p class="faq-a">Yes! BLOQR is completely free to download and play. Optional ads help support
+                    development.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-q">How can I remove ads?</p>
+                <p class="faq-a">We're working on a premium "No Ads" option. Stay tuned for updates!</p>
             </div>
         </div>
+
+        <div class="card">
+            <h2>🔒 Privacy & Legal</h2>
+            <p>
+                Your privacy matters to us. Read our <a href="privacy.html">Privacy Policy</a> to learn how we handle
+                your data.
+            </p>
+        </div>
+
+        <footer>
+            <a href="https://globaldoge0.github.io">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="https://apps.apple.com/app/bloqr/id6757123780">App Store</a>
+            <p style="margin-top: 20px;">© 2024 BLOQR. All rights reserved.</p>
+        </footer>
     </div>
-    <footer>
-        <a href="/bloqr-support/">Support</a> · <a href="/bloqr-support/privacy.html">Privacy Policy</a>
-    </footer>
 </body>
+
 </html>
